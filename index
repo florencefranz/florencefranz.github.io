@@ -10,7 +10,7 @@
 	
 <header>
 	<div class="logo"></div>
-	<h1>short blurb</h1>
+	<h1>name and short blurb</h1>
 	<nav>
 		<a href="#">about me</a>
 		<a href="#">work</a>
