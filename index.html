@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Florence Afolabi</title>
@@ -6,69 +7,54 @@
         <script src="script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
-
-        <section class="header">
-            <h1>Hej!<br>I'm <span>Florence</span> and I'm a <span>web developer</span> living in <span>Gothenburg Sweden</span></h1>
-<!--
-            <nav>
-                <a href="#">about me</a>
-                <a href="#">my portfolio</a>
-                <a href="#">my cv</a>
-                <a href="#">contact me</a>
-            </nav> -->
-        </section>
-
-        <section class="aboutDiv">
-            <h2>about me</h2>
-            <div class="aboutSec">
-                <img class="me" src="https://lh3.googleusercontent.com/pOdBPlx5lrMvTFG2GGlH-yPZJc5ac2OjQJ0iN-VC7fvvQUa_62Am12j-AMUblmuRqOxmo-q8iaizSGziqkz_DQyDm6FGj9O3qhcf_aCbAzDEKvBwoDuDBdoiXoSnwgy-B1IvyBqZKA=w2400"></img>
-
-                <p class="about">
-                    I am a web developer with a background in finance. I have accountancy experience and recently began learning web development.
-                </p>
+        <header>
+            <div class="header-links">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-github"></i>
             </div>
-        </section>
-
-
-          <h2>my projects</h2>
-        <section class="portfolioDiv">
-          <div class="portfolioInd">
-
-            <div class="portfolioImg">
-              <div class="overlay">
-                <button><a href="#" class="live">live</a></button>
-                <button><a href="#" class="code">code</a></button>
-              </div>
-
+            <div class=header-title>
+                <h1>Florence Afolabi</h1>
+                <p>Learning web development</p>
             </div>
-
-            <p class="portfolioTitle">Savings Calculator</p>
-            <p class="portfolioDesc">JavaScript | HTML | CSS</p>
-
-          </div>
-
-        </section>
-
-        <section>
-        <div class="contactDiv">
-            <h2>contact me</h2>
-            <div class="contactAll">
-                <a href"#" class="email">
-                    <i class="far fa-envelope"></i>
-                    <span class=contactText>florence.afolabi@gmail.com</span>
-                </a>
-                <a class="linkedin" href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="pdf" href="#">
-                    <i class="far fa-file-pdf"></i>
-                    <span class=contactText>CV</span>
-                </a>
+        </header>
+        <div class="main">
+            <div class="about-container">
+                <section class="about-section">
+                    <img class="me responsive" src="https://lh3.googleusercontent.com/pOdBPlx5lrMvTFG2GGlH-yPZJc5ac2OjQJ0iN-VC7fvvQUa_62Am12j-AMUblmuRqOxmo-q8iaizSGziqkz_DQyDm6FGj9O3qhcf_aCbAzDEKvBwoDuDBdoiXoSnwgy-B1IvyBqZKA=w2400"/>
+                    <p class="about-desc">
+                        I am a web developer with a background in finance. I have accountancy experience and recently began learning web development.
+                    </p>
+                </section>
             </div>
+                <h2 class="my-projects">My Projects</h2>
+                <section class="project-section">
+                    <div class="project-ind">
+                        <h3>Savings Calculator</h3>
+                        <img class="project-image responsive" src="https://lh3.googleusercontent.com/pOdBPlx5lrMvTFG2GGlH-yPZJc5ac2OjQJ0iN-VC7fvvQUa_62Am12j-AMUblmuRqOxmo-q8iaizSGziqkz_DQyDm6FGj9O3qhcf_aCbAzDEKvBwoDuDBdoiXoSnwgy-B1IvyBqZKA=w2400"/>
+                        <p class="project-tech">HTML | CSS | JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://florenceafo.github.io/savings-calc/" class="live">VIEW LIVE WEBSITE</a>
+                            <a href="https://github.com/florenceafo/savings-calc" class="code">VIEW CODE</a>
+                        </div>
+                    </div>
+            </section>
         </div>
-        </section>
-
+        <footer>
+            <a class="pdf" href="#">
+                <i class="far fa-file-pdf"></i>
+                <span class=contact-text>CV</span>
+            </a>
+            <a class="linkedin" href="#">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href"#" class="email">
+                <i class="far fa-envelope"></i>
+                <span class=contactText>florence.afolabi@gmail.com</span>
+            </a>
+            <a href"#" class="github">
+                <i class="fab fa-github"></i>
+            </a>
+        </footer>
     </body>
 </html>
