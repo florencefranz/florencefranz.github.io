@@ -47,6 +47,7 @@ h2 {
 	padding-bottom: 1%;
 	font-size: 30px;
 	color: #004587;
+	display: block;
 }
 
 .aboutDiv {
@@ -94,16 +95,33 @@ h2 {
 .portfolioDiv {
 	display: flex;
 }
+
+.portfolioInd {
+	background-color: #f9f9f9;
+	max-width: 600px;
+	border-radius: 4px;
+	box-shadow: 2px 3px 5px 2px #ccc;
+	margin: 0 auto;
+	justify-content: space-around;
+}
 @media only screen and (max-width: 950px) {
-    .portfolioDiv {
-			display: flex;
-			flex-direction: column;
+    .portfolioInd {
+
     }
 }
 
-.portfolioInd {
-	max-width: 300px;
-	margin: auto;
+.portfolioImg {
+	background: url("https://via.placeholder.com/300x300");
+}
+.overlay {
+	opacity: 0;
+	visibility: hidden;
+	height: 300px;
+	width: 300px;
+}
+.portfolioImg:hover .overlay {
+	visibility: visible;
+	opacity: 1;
 }
 
 /* contact */
