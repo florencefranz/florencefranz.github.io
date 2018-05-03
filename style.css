@@ -1,37 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
 body {
-	background-color: grey;
+	background-color: #fcfcfc;
 	margin: 0px;
 	padding: 0px;
+	color: #141414;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
+.top {
+	display: flex;
+	flex-direction: column;
+}
+@media only screen and (min-width: 700px) {
+	body {
+		background-color: #fcfcfc;
+	}
+}
+/* HEADER */
 header {
+	margin-left: 30px;
+	display: block;
 }
-.header-links i {
+@media only screen and (min-width: 700px) {
+	header {
+		margin-left: 100px;
+	}
 }
-
+@media only screen and (min-width: 1000px) {
+	header {
+		margin-left: 200px;
+	}
+}
+h1 {
+	text-align: center;
+}
+/* ABOUT */
 .about-container {
-	background-color: #ccc;
-	padding: 5% 0 5% 0;
+	padding: 0 0 0 0;
 }
 .about-section {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	padding: 3%;
 	max-width: 700px;
 	margin: 0 auto;
 	background-color: #efefef;
 	border-radius: 10px;
 }
+@media only screen and (min-width: 500px ) {
+	.about-section {
+		display: flex;
+		flex-direction: row;
+	}
+}
 .about-section img {
-	width: 200px;
-	height:200px;
+	width: 150px;
+	height:150px;
 	border-radius: 10px;
+	margin: 20px auto 0 auto;
+}
+@media only screen and (min-width: 500px ) {
+	.about-section img {
+		width: 200px;
+		height:200px;
+	}
 }
 .about-section p {
 	line-height: 1.6;
-	font-size: 20px;
+	font-size: 18px;
 	padding-left: 3%;
 }
-
+.about-section p span {
+	color: purple;
+}
+/* PROJECTS */
+.proj-container {
+}
+h2 {
+	text-align: center;
+	font-size: 40px;
+}
+.proj-section {
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+}
+@media only screen and (min-width: 700px) {
+	.proj-section {
+		margin-left: 200px;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.proj-section {
+		margin-left: 400px;
+	}
+}
+h3 {
+	font-size: 25px;
+}
+.proj-ind p {
+	font-size: 16px;
+}.proj-tech, .proj-links {
+	margin-left: 20px;
+}
+.proj-links {
+	margin-bottom: 40px;
+}
+.proj-links a {
+	color: grey;
+	margin: 0 15px 0 0;
+}
+.proj-links a:hover {
+	color: green;
+	text-decoration: none;
+}
+/* FOOTER */
 footer {
 	background-color: pink;
 	display: flex;
@@ -55,7 +137,7 @@ footer {
 	color: grey;
 }
 .footer-link:hover {
-	color: black;
+	color: #141414;
 	text-decoration: none;
 }
 .footer-title, .email, .view-more, .footer-link {
