@@ -82,12 +82,15 @@ h2 {
 }
 @media only screen and (min-width: 700px) {
 	.proj-section {
-		margin-left: 200px;
+		flex-direction: row;
+		justify-content: center;
+		max-width: 600px;
+		margin: 0 20px 0 20px;
 	}
 }
 @media only screen and (min-width: 1000px) {
 	.proj-section {
-		margin-left: 400px;
+
 	}
 }
 h3 {
@@ -129,7 +132,7 @@ footer {
 	}
 }
 .footer-title {
- color: black;
+ color: #141414;
 }
  .view-more, .email, .footer-link {
 	color: #5d576b;
