@@ -17,21 +17,12 @@ body {
 }
 /* HEADER */
 header {
-	margin-left: 30px;
 	display: block;
-}
-@media only screen and (min-width: 700px) {
-	header {
-		margin-left: 100px;
-	}
-}
-@media only screen and (min-width: 1000px) {
-	header {
-		margin-left: 200px;
-	}
+	margin-bottom: 20px;
 }
 h1 {
 	text-align: center;
+	font-size: 35px;
 }
 /* ABOUT */
 .about-container {
@@ -44,12 +35,17 @@ h1 {
 	max-width: 700px;
 	margin: 0 auto;
 	background-color: #efefef;
-	border-radius: 10px;
+}
+@media only screen and (min-width: 750px ) {
+	.about-section {
+		border-radius: 10px;
+	}
 }
 @media only screen and (min-width: 500px ) {
 	.about-section {
 		display: flex;
 		flex-direction: row;
+		padding: 20px;
 	}
 }
 .about-section img {
@@ -70,17 +66,17 @@ h1 {
 	padding-left: 3%;
 }
 .about-section p span {
-	color: purple;
+	font-weight: 900;
 }
 /* PROJECTS */
 .proj-container {
 }
 h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 }
 .proj-section {
-	margin-left: 30px;
+	margin-left: 28px;
 	display: flex;
 	flex-direction: column;
 }
@@ -95,27 +91,29 @@ h2 {
 	}
 }
 h3 {
-	font-size: 25px;
+	font-size: 20px;
 }
 .proj-ind p {
 	font-size: 16px;
-}.proj-tech, .proj-links {
+	max-width: 900px;
+}
+.proj-tech, .proj-links {
 	margin-left: 20px;
 }
 .proj-links {
 	margin-bottom: 40px;
 }
 .proj-links a {
-	color: grey;
+	color: #5d576b;
 	margin: 0 15px 0 0;
 }
 .proj-links a:hover {
-	color: green;
+	color: #9bc1bc;
 	text-decoration: none;
 }
 /* FOOTER */
 footer {
-	background-color: pink;
+	background-color: #9bc1bc;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -134,7 +132,7 @@ footer {
  color: black;
 }
  .view-more, .email, .footer-link {
-	color: grey;
+	color: #5d576b;
 }
 .footer-link:hover {
 	color: #141414;
