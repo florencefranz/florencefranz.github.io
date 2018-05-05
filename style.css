@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 body {
 	background-color: #fcfcfc;
 	margin: 0px;
 	padding: 0px;
-	color: #141414;
-	font-family: 'Encode Sans Semi Expanded', sans-serif;
+	color: #5d576b;
+	font-family: 'Dosis', sans-serif;
 }
 .top {
 	display: flex;
@@ -18,15 +19,19 @@ body {
 /* HEADER */
 header {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
+	background-color: #9bc1bc;
 }
 h1 {
 	text-align: center;
-	font-size: 35px;
+	font-size: 30px;
+	padding: 10px 0 20px 0;
+	color: #efefef;
 }
 /* ABOUT */
 .about-container {
 	padding: 0 0 0 0;
+	margin-bottom: 50px;
 }
 .about-section {
 	display: flex;
@@ -64,63 +69,55 @@ h1 {
 	line-height: 1.6;
 	font-size: 18px;
 	padding-left: 3%;
+	color: #5d576b;
 }
 .about-section p span {
 	font-weight: 900;
 }
 /* PROJECTS */
-.proj-container {
+
+.proj-image {
+	width: 200px;
+	height:200px;
+	margin: 0 50px 0 50px;
+	border-radius: 10px;
 }
-h2 {
+h2, h3 {
 	text-align: center;
-	font-size: 30px;
+}
+h3 a, .proj-links a {
+	color: #5d576b;
+}
+h3 a:hover, .proj-links a:hover {
+	text-decoration: none;
+	color: #9bc1bc;
+}
+.proj-ind {
+	max-width: 300px;
+	margin: 0 30px 40px 30px;
 }
 .proj-section {
-	margin-left: 28px;
 	display: flex;
-	flex-direction: column;
-}
-@media only screen and (min-width: 700px) {
-	.proj-section {
-		flex-direction: row;
-		justify-content: center;
-		max-width: 600px;
-		margin: 0 20px 0 20px;
-	}
-}
-@media only screen and (min-width: 1000px) {
-	.proj-section {
-
-	}
-}
-h3 {
-	font-size: 20px;
-}
-.proj-ind p {
-	font-size: 16px;
-	max-width: 900px;
+	flex-direction: row;
+	flex-flow: wrap;
+	justify-content: space-around;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 .proj-tech, .proj-links {
 	margin-left: 20px;
 }
-.proj-links {
-	margin-bottom: 40px;
-}
 .proj-links a {
-	color: #5d576b;
-	margin: 0 15px 0 0;
-}
-.proj-links a:hover {
-	color: #9bc1bc;
-	text-decoration: none;
+	margin: 0 10px 0 0;
 }
 /* FOOTER */
 footer {
 	background-color: #9bc1bc;
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
-	padding: 30px 25% 30px 25%;
+	padding: 30px 25% 30px 20%;
+	position: relative;
+	margin-top: 50px;
 }
 @media only screen and (max-width: 700px) {
 	footer {
@@ -130,6 +127,9 @@ footer {
 	.footer-left {
 		padding-bottom: 20px;
 	}
+}
+.footer-right, .footer-left {
+	margin: 0 10px 0 10px;
 }
 .footer-title {
  color: #141414;
