@@ -1,141 +1,261 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 body {
-	background-color: #fcfcfc;
-	margin: 0px;
-	padding: 0px;
-	color: #5d576b;
-	font-family: 'Dosis', sans-serif;
+    background-color: #F5F5F5;
+    color: #ccc;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
 }
-.top {
-	display: flex;
-	flex-direction: column;
+h1, h2 {
+    text-align: center;
 }
-@media only screen and (min-width: 700px) {
-	body {
-		background-color: #fcfcfc;
-	}
+h4 {
+    font-size: 150%;
+    font-weight:700;
+    color: #f5f5f5;
+    text-align: center;
+    padding-top: 2%;
 }
-/* HEADER */
-header {
-	display: block;
-	margin-bottom: 60px;
-	background-color: #9bc1bc;
-}
-h1 {
-	text-align: center;
-	font-size: 30px;
-	padding: 10px 0 20px 0;
-	color: #efefef;
-}
-/* ABOUT */
-.about-container {
-	padding: 0 0 0 0;
-	margin-bottom: 50px;
-}
-.about-section {
-	display: flex;
-	flex-direction: column;
-	padding: 3%;
-	max-width: 700px;
-	margin: 0 auto;
-	background-color: #efefef;
-}
-@media only screen and (min-width: 750px ) {
-	.about-section {
-		border-radius: 10px;
-	}
-}
-@media only screen and (min-width: 500px ) {
-	.about-section {
-		display: flex;
-		flex-direction: row;
-		padding: 20px;
-	}
-}
-.about-section img {
-	width: 150px;
-	height:150px;
-	border-radius: 10px;
-	margin: 20px auto 0 auto;
-}
-@media only screen and (min-width: 500px ) {
-	.about-section img {
-		width: 200px;
-		height:200px;
-	}
-}
-.about-section p {
-	line-height: 1.6;
-	font-size: 18px;
-	padding-left: 3%;
-	color: #5d576b;
-}
-.about-section p span {
-	font-weight: 900;
-}
-/* PROJECTS */
+h3 {
+    font-size: 175%;
+    font-weight: 400;
+    color: #efefef;
+    line-height: 120%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    width: 100%;
 
-.proj-image {
-	width: 200px;
-	height:200px;
-	margin: 0 50px 0 50px;
-	border-radius: 10px;
 }
-h2, h3 {
-	text-align: center;
+.skills-quarter p {
+    font-size: 160%;
+    font-weight: 400;
+    font-family: "Quicksand", sans-serif;
+    color: #f5f5f5;
+    line-height: 150%;
+    padding: 3%;
+    text-align: justify;
 }
-h3 a, .proj-links a {
-	color: #5d576b;
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+	border-radius: 3%;
+    margin: 0 auto -3% auto;
 }
-h3 a:hover, .proj-links a:hover {
-	text-decoration: none;
-	color: #9bc1bc;
+header {
+    background-color: #ccc;
+    width: 100%;
+    height: 100px;
 }
-.proj-ind {
-	max-width: 300px;
-	margin: 0 30px 40px 30px;
+
+/* --------------------Start Header Style */
+.header-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.proj-section {
-	display: flex;
-	flex-direction: row;
-	flex-flow: wrap;
-	justify-content: space-around;
-	max-width: 1000px;
-	margin: 0 auto;
+.logo {
+    margin: 20px;
+    float: left;
+    width: 100px;
+    height: 60px;
+    background: url(logo.png) no-repeat center;
 }
-.proj-tech, .proj-links {
-	margin-left: 20px;
+/*vEnd Header Style */
+
+/* --------------------Start Navigation Style */
+nav {
+    float: right;
+    padding: 20px 20px 0 0;
 }
-.proj-links a {
-	margin: 0 10px 0 0;
+.menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(menu-icon.png) center;
 }
-/* FOOTER */
+a:hover .menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+ul {
+    list-style-type: none;
+}
+nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #141414;
+}
+/* --------------------End Navigation Style */
+
+/* --------------------Start Banner Style */
+.banner {
+    width: 100%;
+    background-color: #efefef;
+}
+.banner-wrapper {
+    width: 50%;
+    max-width: 500px;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------------------End Banner Style */
+
+/* --------------------Start About Me Style */
+.about-wrapper {
+    padding-bottom: 40px;
+    background-color: #ccc;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.about-text p {
+    color: #141414;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10px;
+}
+.about-text {
+    flex: 2;
+}
+.me-image {
+    flex: 1;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* --------------------End About Me Style */
+
+/* --------------------Start Skills Style */
+.skills-quarter {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.git {
+    background-color: #ccc;
+}
+.javascript {
+    background-color: #1b1b1b;
+}
+.sql {
+    background-color: #ccc;
+}
+.python {
+    background-color: #1b1b1b;
+}
+.skills-quarter i {
+    color: #F0F0F0;
+    font-size: 250%;
+    padding: 5% 0 2% 0;
+}
+.skills-quarter p {
+    font-size: 120%;
+    font-weight: 400;
+    color: #efefef;
+    line-height: 120%;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+/* --------------------End Skills Style */
+
+/* --------------------Start Portfolio Style */
+.projects-wrapper {
+    background-color: #141414;
+    width: 100%;
+}
+.projects-all {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project {
+    flex-flow: wrap;
+    flex-direction: row;
+    flex: 1;
+    padding: 5% 5% 3% 5%;
+    margin-bottom: 50px;
+}
+
+.project-text {
+    line-height: 1.6;
+    font-size: 120%;
+    text-align: justify;
+}
+.project-image-links {
+    display: flex;
+    flex-direction: row;
+}
+.project-links {
+    text-align: left;
+    margin-left: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-links a {
+    font-size: 150%;
+    color: #f5f5f5;
+    text-decoration: none;
+    text-align: center;
+}
+.project-links a:hover {
+    font-size: 150%;
+    color: #efefef;
+}
+project {
+    margin: auto 0 auto 0;
+}
+.project-image-links img {
+    flex: 2;
+	margin: 0 2% 0 2%;
+
+}
+/* --------------------End Portfolio Style */
+
+/* --------------------Start Footer Style */
 footer {
-	background-color: #9bc1bc;
-	display: flex;
+    background-color: #232323;
+    display: flex;
 	flex-wrap: wrap;
-	padding: 30px 25% 30px 20%;
-	position: relative;
-	margin-top: 50px;
+    max-width: 100%;
+    padding: 10px 0 25px 50px;
+	justify-content: center;
 }
-@media only screen and (max-width: 700px) {
-	footer {
-		display: flex;
-		flex-direction: column;
-	}
-	.footer-left {
-		padding-bottom: 20px;
-	}
+.footer-left {
+    margin: 0 10px 10px 10px;
 }
-.footer-right, .footer-left {
+
+.footer-right {
 	margin: 0 10px 0 10px;
 }
 .footer-title {
- color: #141414;
+ color: #efefef;
 }
- .view-more, .email, .footer-link {
-	color: #5d576b;
+
+ .email, .footer-link {
+	color: #f5f5f5;
+    text-decoration: none;
 }
 .footer-link:hover {
 	color: #141414;
@@ -146,3 +266,60 @@ footer {
 	padding: 0;
 	font-size: 15px;
 }
+/* --------------------End Footer Style */
+
+/* --------------------Start Media Queries */
+@media screen and (max-width: 770px) {
+    h4 {
+        font-size: 150%;
+    }
+    .menu-icon {
+        display: inline-block;
+        background-size: 60px 60px;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        z-index; 1000;
+        position: absolute;
+        background-color: #ccc;
+        right: 20px;
+
+        border: 2px solid #141414;
+        border-radius: 4px 0 4px 4px;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    .nav-link {
+        font-size: 70%;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .me-image {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .projects-all {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .skills-quarter p {
+        font-size: 80%;
+    }
+    .skills-quarter i {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 700px) {
+	footer {
+		flex-direction: column;
+	}
+}
+
+/* --------------------End Media Queries */

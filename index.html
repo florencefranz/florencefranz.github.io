@@ -1,87 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Florence Afolabi</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="top">
-            <header>
-                <div class=header-title>
-                    <h1>FLORENCE AFOLABI</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Florence Afolabi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo"></div>
+            <nav>
+                <a href="#" class="menu-icon"></a>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="https://florenceafo.github.io/Florence%20Afolabi.pdf" class="nav-link" target="_blank">CV</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- Header ends -->
+    <section class="banner">
+        <div class="banner-wrapper">
+            <h1>Florence Afolabi</h1>
+            <h2>Hi, welcome to my site</h2>
+        </div>
+    </section>
+<!-- Banner ends -->
+<section class="about-wrapper">
+    <h3 id="about">About Me</h3>
+    <div class="about-container">
+        <section class="about-text">
+            <p>Hi, I'm <span>Florence</span> and I enjoy making web apps. I have three years of experience working in Finance and I am taking some time to learn <span>web development.</span> Check out a couple of my projects below. I recently moved to <span>Gothenburg, Sweden.</span></p>
+        </section>
+        <section class="me-image responsive">
+            <img src="me.jpg" />
+        </section>
+    </div>
+</section>
+<!-- About me ends -->
+<section class="projects-wrapper">
+    <h3 id="projects">My Projects</h3>
+    <div class="projects-all">
+        <div class="project">
+            <div class="project-image-links">
+                <img src="screenshot-savings-calc.jpg">
+                <div class="project-links">
+                    <a href="https://florenceafo.github.io/savings-calc/" class="live">website</a>
+                    <a href="https://github.com/florenceafo/savings-calc" class="code" target="_blank">code</a>
                 </div>
-            </header>
-            <div class="about-container">
-                <section class="about-section">
-                    <img class="me responsive" src="me.jpg"/>
-                    <p class="about-desc">
-                        Hi, I'm <span>Florence</span> and I enjoy making web apps.
-                        I have three years of experience working in Finance and I am taking some time to learn <span>web development.</span>
-                        Check out a couple of my projects below.
-                        I recently moved to <span>Gothenburg, Sweden.</span>
-                    </p>
-                </section>
+            </div>
+            <div>
+                <h4>Savings Calculator</h4>
+                <p class="project-text">This calculator helps users start saving. Based on a user's input, it will calculate when they will reach their savings goal.</p>
             </div>
         </div>
-            <section class="proj-container">
-                <h2 class="my-projects">My Projects</h2>
-                <div class="proj-section">
-                    <div class="proj-ind">
-                        <h3>
-                            <a href="https://florenceafo.github.io/savings-calc/" class="live">
-                                Savings Calculator
-                            </a>
-                        </h3>
-                        <img class="proj-image" src="screenshot-savings-calc.jpg" />
-                        <p class="proj-description">
-                            This calculator helps users start saving. Based on a user's input, it will calculate when they will reach their savings goal.
-                        </p>
-                        <p class="proj-tech">JavaScript - HTML - CSS</p>
-                        <div class="proj-links">
-                            <a href="https://florenceafo.github.io/savings-calc/" class="live">website</a>
-                            <a href="https://github.com/florenceafo/savings-calc" class="code">code</a>
-                        </div>
-                    </div>
-                    <div class="proj-ind">
-                        <h3>
-                            <a href="https://florenceafo.github.io/random-word/" class="live">
-                                Random Word Generator
-                            </a>
-                        </h3>
-                        <img class="proj-image" src="screenshot-random-word.jpg" />
-                        <p class="proj-description">
-                            I made an app to help me with my Swedish learning.
-                            It's a webpage that randomly pulls a Swedish word plus its English translation.
-                            I am working on being able to filter the words based on type i.e verb, noun etc.
-                        </p>
-                        <div proj-tech-links>
-                            <p class="proj-tech">
-                                Python - JavaScript - HTML - CSS
-                            </p>
-                            <div class="proj-links">
-                                <a href="https://florenceafo.github.io/random-word/" class="live">website</a>
-                                <a href="https://github.com/florenceafo/random-word" class="code">code</a>
-                            </div>
-                        </div>
+        <div class="project">
+                <div class="project-image-links">
+                    <img src="screenshot-random-word.jpg">
+                    <div class="project-links">
+                        <a href="https://florenceafo.github.io/random-word/" class="live">website</a>
+                        <a href="https://github.com/florenceafo/random-word" class="code" target="_blank">code</a>
                     </div>
                 </div>
-            </section>
-
-        <footer>
-            <div class="footer-left">
-                <p class="footer-title">Email</p>
-                <p class="email"><a>florence.afolabi@gmail.com</a></p>
+            <div>
+                <h4>Random Word</h4>
+                <p class="project-text">I made an app to help me with my Swedish learning.
+                It's a webpage that randomly pulls a Swedish word plus its English translation.
+                I am working on being able to filter the words based on type i.e verb, noun etc.</p>
             </div>
-            <div class="footer-right">
-                <p class="footer-title">View more</p>
-                <p class="view-more">
-                    <a class="footer-link" href="https://florenceafo.github.io/Florence%20Afolabi.pdf">CV</a> |
-                    <a class="footer-link" href="https://github.com/florenceafo">Github</a> |
-                    <a class="footer-link" href="https://www.linkedin.com/in/florence-a/">LinkedIn</a>
-                </p>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+</section>
+<!-- Project ends -->
+    <footer>
+        <h3 id="contact">Contact me</h3>
+        <div class="footer-left">
+            <p class="footer-title">Email</p>
+            <p class="email"><a>florence.afolabi@gmail.com</a></p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-title">View more</p>
+            <ul class="view-more">
+                <li><a class="footer-link" href="https://florenceafo.github.io/Florence%20Afolabi.pdf" target="_blank">CV</a></li>
+                <li><a class="footer-link" href="https://github.com/florenceafo" target="_blank">Github</a></li>
+                <li><a class="footer-link" href="https://www.linkedin.com/in/florence-a/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+<!-- Footer ends -->
+<section class="skills-quarter git">
+    <td><i class="fab fa-github"></i></td>
+    <p>GIT</p>
+</section>
+<section class="skills-quarter javascript">
+    <td><i class="fab fa-js-square"></i></td>
+    <p>JavaScript</p>
+</section>
+<section class="skills-quarter sql">
+    <td><i class="fas fa-database"></i></td>
+    <p>PostgreSQL</p>
+</section>
+<section class="skills-quarter python">
+    <td><i class="fab fa-python"></i></td>
+    <p>Python</p>
+</section>
+<!-- Skill boxes ends -->
+</body>
 </html>
