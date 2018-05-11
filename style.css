@@ -61,7 +61,7 @@ header {
 }
 .logo {
     margin: 20px;
-    float: left;c
+    float: left;
     width: 100px;
     height: 60px;
     background: url(logo.png) no-repeat center;
@@ -124,9 +124,7 @@ nav ul li a:hover {
 }
 .about-container {
     display: flex;
-    flex-direction: row;
     max-width: 900px;
-    justify-content: space-around;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -143,16 +141,23 @@ nav ul li a:hover {
     background-color: #b1c7d8;
 }
 .about-text {
-
+    float: left;
+}
+.about-text p {
+    padding: 10px;
 }
 .me-image {
-    
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.me-image img {
+    float: left;
     box-shadow: 3px 2px 5px 0px #565656;
+    max-width: 260px;
+    min-width: 200px;
+    max-height: 330px;
+    width: 100%;
+    margin: 20px 20px 10px 20px;
+
 }
+
+
 /* --------------------End About Me Style */
 
 /* --------------------Start Skills Style */
@@ -264,29 +269,35 @@ footer {
 }
 .footer-left {
     margin: 0 20px 10px 10px;
-    padding: 10px;
+    padding: 20px;
 }
 .footer-right {
 	margin: 0 10px 0 20px;
-    padding: 10px;
+    padding: 20px;
 }
-.footer-title {
+.footer-right, .footer-left {
+    display: flex;
+    justify-content: center;
+}
+/* .footer-title {
  color: #efefef;
-}
+} */
  .email, .footer-link {
 	color: #efefef;
+
 }
 .footer-link {
     text-decoration: underline;
+
 }
 .footer-link:hover {
 	color: #cdcdcd;
 	text-decoration: none;
 }
-.footer-title, .email, .view-more, .footer-link {
+.email, .footer-link {
 	margin: 0;
 	padding: 0;
-	font-size: 15px;
+	font-size: 120%;
 }
 /* --------------------End Footer Style */
 
@@ -318,7 +329,8 @@ footer {
     }
 }
 @media only screen and (max-width: 500px) {
-    .about-container {
+    .about-text {
+        display: flex;
         flex-direction: column;
     }
     .me-image {
