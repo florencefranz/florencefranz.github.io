@@ -42,7 +42,7 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  flex: 2;
 }
 
 .links {
@@ -53,18 +53,19 @@ p {
   flex: 1;
 }
 
-.links a {
+.links a, .snake-button {
   color: #545454;
   margin-top: 30px;
   padding: 10px;
   height: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
-.footer-link:hover {
+.footer-link:hover, .snake-button:hover {
   color: #545454;
   text-decoration: underline #dfba1e;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -119,7 +120,6 @@ p {
     justify-content: space-around;
     flex: 1;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -152,5 +152,62 @@ p {
     font-size: 1em;
     text-decoration: none;
   }
+}
 
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.0);
+  margin: 15% auto; /* 15% from the top and centered */
+  /* padding: 20px; */
+  height: 500px;
+  width: 500px; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  z-index: 2;
+  position: absolute;
+}
+.score {
+  z-index: 5;
+  widows: 300px;
+  color:rgba(255, 255, 255, 0.4);
+  font-size: 3em;
+}
+
+/* The Close Button */
+.close {
+  color:rgba(255, 255, 255, 0.4);
+  float: right;
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  justify-self: right;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
