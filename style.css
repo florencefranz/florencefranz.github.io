@@ -68,6 +68,10 @@ p {
   cursor: pointer;
 }
 
+.blog-link {
+  text-align: center
+}
+
 @media screen and (max-width: 900px) {
   html {
     background: url('./small-background.png') no-repeat center center fixed;
